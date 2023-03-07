@@ -1,0 +1,7 @@
+<%= flash[:res] %>
+<%= @kittens.each do |kitten| %>
+    <div>
+        <strong> <%= kitten.name %> </strong> | 
+        <%= link_to 'See more...', kitten_path(kitten) %>
+    </div>
+<% end %>
